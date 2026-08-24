@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energía Solar para mi Comunidad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>☀️ Energía Solar para mi Comunidad</h1>
+        <p>Prototipo digital de energía renovable</p>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>🌱 ¿Cómo funciona?</h2>
+            <p>
+                Este prototipo representa una comunidad que utiliza energía solar.
+                Los paneles solares aprovechan la radiación del Sol para producir
+                energía eléctrica que puede utilizarse para satisfacer las
+                necesidades de la comunidad.
+            </p>
+        </section>
+
+        <section class="controls">
+
+            <h2>⚙️ Simulación</h2>
+
+            <label for="panels">
+                Cantidad de paneles solares:
+            </label>
+
+            <input
+                type="range"
+                id="panels"
+                min="1"
+                max="20"
+                value="5"
+            >
+
+            <p>
+                Paneles: <strong id="panelValue">5</strong>
+            </p>
+
+
+            <label for="sun">
+                Intensidad de la luz solar:
+            </label>
+
+            <input
+                type="range"
+                id="sun"
+                min="10"
+                max="100"
+                value="70"
+            >
+
+            <p>
+                Intensidad solar: <strong id="sunValue">70%</strong>
+            </p>
+
+        </section>
+
+        <section class="results">
+
+            <div class="card">
+                <span>☀️</span>
+                <h3>Radiación solar</h3>
+                <p id="solarResult">70%</p>
+            </div>
+
+            <div class="card">
+                <span>⚡</span>
+                <h3>Energía producida</h3>
+                <p id="energyResult">0 Wh</p>
+            </div>
+
+            <div class="card">
+                <span>🏠</span>
+                <h3>Consumo comunitario</h3>
+                <p>500 Wh</p>
+            </div>
+
+        </section>
+
+        <section class="status">
+
+            <h2>📊 Estado de la comunidad</h2>
+
+            <div id="statusBox">
+                Calculando...
+            </div>
+
+        </section>
+
+        <section class="science">
+
+            <h2>🔬 Principio científico</h2>
+
+            <p>
+                La energía solar es una fuente renovable porque utiliza la
+                radiación del Sol. En un sistema fotovoltaico, las células
+                solares transforman la energía radiante en energía eléctrica.
+            </p>
+
+            <p>
+                La cantidad de energía producida depende de factores como
+                la cantidad de paneles y la intensidad de la radiación solar.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto STEM — Grado 9</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

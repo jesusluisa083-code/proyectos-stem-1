@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef7f1;
+    color: #1f2937;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1f7a4d;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.intro {
+    text-align: center;
+}
+
+.controls label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card span {
+    font-size: 35px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#statusBox {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.science {
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1f7a4d;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .results {
+        grid-template-columns: 1fr;
+    }
+}
